@@ -1,0 +1,127 @@
+-- =========================================================
+-- Script : Insertion des données de test
+-- Base : tifosi
+-- =========================================================
+
+-- Insertion des marques
+INSERT INTO marque (id_marque, nom) VALUES (1, 'Coca-cola');
+INSERT INTO marque (id_marque, nom) VALUES (2, 'Cristalline');
+INSERT INTO marque (id_marque, nom) VALUES (3, 'Monster');
+INSERT INTO marque (id_marque, nom) VALUES (4, 'Pepsico');
+
+-- Insertion des boissons
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (1, 'Coca-cola zéro', 1);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (2, 'Coca-cola original', 1);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (3, 'Fanta citron', 1);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (4, 'Fanta orange', 1);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (5, 'Capri-sun', 1);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (6, 'Pepsi', 4);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (7, 'Pepsi Max Zéro', 4);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (8, 'Lipton zéro citron', 4);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (9, 'Lipton Peach', 4);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (10, 'Monster energy ultra gold', 3);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (11, 'Monster energy ultra blue', 3);
+INSERT INTO boisson (id_boisson, nom, id_marque) VALUES (12, 'Eau de source ', 2);
+
+-- Insertion des ingrédients
+INSERT INTO ingredient (id_ingredient, nom) VALUES (1, 'Ail');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (2, 'Ananas');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (3, 'Artichaut');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (4, 'Bacon');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (5, 'Base Tomate');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (6, 'Base crème');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (7, 'Champignon');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (8, 'Chevre');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (9, 'Cresson');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (10, 'Emmental');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (11, 'Gorgonzola');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (12, 'Jambon cuit');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (13, 'Jambon fumé');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (14, 'Oeuf');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (15, 'Oignon');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (16, 'Olive noire');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (17, 'Olive verte');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (18, 'Parmesan');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (19, 'Piment');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (20, 'Poivre');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (21, 'Pomme de terre');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (22, 'Raclette');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (23, 'Salami');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (24, 'Tomate cerise');
+INSERT INTO ingredient (id_ingredient, nom) VALUES (25, 'Mozarella');
+
+-- Insertion des focaccias
+INSERT INTO focaccia (id_focaccia, nom, prix) VALUES (1, 'Mozaccia', 9.8);
+INSERT INTO focaccia (id_focaccia, nom, prix) VALUES (2, 'Gorgonzollaccia', 10.8);
+INSERT INTO focaccia (id_focaccia, nom, prix) VALUES (3, 'Raclaccia', 8.9);
+INSERT INTO focaccia (id_focaccia, nom, prix) VALUES (4, 'Emmentalaccia', 9.8);
+INSERT INTO focaccia (id_focaccia, nom, prix) VALUES (5, 'Tradizione', 8.9);
+INSERT INTO focaccia (id_focaccia, nom, prix) VALUES (6, 'Hawaienne', 11.2);
+INSERT INTO focaccia (id_focaccia, nom, prix) VALUES (7, 'Américaine', 10.8);
+INSERT INTO focaccia (id_focaccia, nom, prix) VALUES (8, 'Paysanne', 12.8);
+
+-- Insertion des relations focaccia_ingredient
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 5, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 25, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 9, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 13, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 1, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 3, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 7, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 18, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 20, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (1, 16, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (2, 5, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (2, 11, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (2, 9, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (2, 1, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (2, 7, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (2, 18, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (2, 20, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (2, 16, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (3, 5, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (3, 22, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (3, 9, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (3, 1, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (3, 7, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (3, 18, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (3, 20, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (4, 6, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (4, 10, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (4, 9, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (4, 7, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (4, 18, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (4, 20, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (4, 15, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (5, 5, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (5, 25, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (5, 9, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (5, 12, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (5, 18, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (5, 20, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 5, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 25, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 9, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 4, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 2, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 19, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 18, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 20, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (6, 16, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (7, 5, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (7, 25, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (7, 9, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (7, 4, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (7, 18, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (7, 20, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (7, 16, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 6, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 9, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 21, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 13, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 1, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 3, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 7, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 18, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 20, 1);
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite) VALUES (8, 16, 1);
